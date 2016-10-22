@@ -21,52 +21,11 @@
 
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <title>Igboro Vibes - Designed &amp; Developed by KPIE Technologies</title>
-	<script type= "text/javascript"
-charset= "utf-8" src = "cordova.js" ></script>
-<script type= "text/javascript"
-charset= "utf-8" >
-// Wait for device API libraries to load
-//
-function onLoad() {
-document.addEventListener
-( "deviceready " , onDeviceReady,
-false );
-}
-// device APIs are available
-//
-function onDeviceReady() {
-document.addEventListener
-( "offline " , onOffline, false );
-}
-// Handle the offline event
-//
-function onOffline() 
-{
-	window.location = "offline.html" ;
-}
-</script>
-
-<script type="text/javascript"> 
-       function hideLoading() { 
-            document.getElementById('divLoading').style.display = "none"; 
-            document.getElementById('divFrameHolder').style.display = "block"; 
-        } 
-		</script> 
-
 </head>
 
-<body onload= " onLoad() ">
+<body>
     
-	
-	<form id="form1" runat="server"> 
-						<div id="divLoading"> 
-							<img src="img/splash.png" alt="Loading the page..." /> 
-						</div> 
-						<div id="divFrameHolder" style="display:none">
-	<iframe src="http://igborovibes.com/" onload="hideLoading()" frameborder="0" height="980px" width="100%" >
-	// This will display igborovibes home page form the web
-	</iframe>
-	
+	This Is the OFFLINE page for Non Internet Users
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
