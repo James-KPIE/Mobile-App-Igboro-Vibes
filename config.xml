@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.KpieTechnologies.IgboroVibes" version="1.0.1">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.KpieTechnologies.IgboroVibes" version="1.0.2">
   <name>Igboro Vibes</name>
   <description>Mobile App for IgboroVibes that show case the web app within the mobile app.</description>
   <author href="http://igborovibes.com" email="fxroyalmoneysolution@gmail.com">KPIE Technologies Team</author>
