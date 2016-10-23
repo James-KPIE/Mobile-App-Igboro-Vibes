@@ -1,77 +1,46 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
-    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
-    <!-- Good default declaration:
-    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-        * Enable inline JS: add 'unsafe-inline' to default-src
-        * Enable eval(): add 'unsafe-eval' to default-src
-    * Create your own at http://cspisawesome.com
-    -->
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
-
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Igboro Vibes - Designed &amp; Developed by KPIE Technologies</title>
-	<script type= "text/javascript"
-charset= "utf-8" src = "cordova.js" ></script>
-<script type= "text/javascript"
-charset= "utf-8" >
-// Wait for device API libraries to load
-//
-function onLoad() {
-document.addEventListener
-( "deviceready " , onDeviceReady,
-false );
-}
-// device APIs are available
-//
-function onDeviceReady() {
-document.addEventListener
-( "offline " , onOffline, false );
-}
-// Handle the offline event
-//
-function onOffline() 
-{
-	window.location = "offline.html" ;
-}
-</script>
-
-<script type="text/javascript"> 
-       function hideLoading() { 
-            document.getElementById('divLoading').style.display = "none"; 
-            document.getElementById('divFrameHolder').style.display = "block"; 
-        } 
-		</script> 
-
+<title>IgboroVibes | Home :Display IgboroVibes web pages</title> 
+<!-- For-Mobile-Apps-and-Meta-Tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Fortune Estates Widget Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, SmartPhone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //For-Mobile-Apps-and-Meta-Tags -->
+<!-- Custom Theme files -->
+<link href="fortuneestates/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="fortuneestates/css/style.css" type="text/css" rel="stylesheet" media="all">  
+<!-- //Custom Theme files -->
+<!-- js -->
+<script src="fortuneestates/js/jquery-2.2.3.min.js"></script> 
+<!-- //js -->
+<!-- web-fonts -->  
+<link href='//fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<!-- //web-fonts --> 
 </head>
-
-<body onload= " onLoad() ">
-    
-	
-	<form id="form1" runat="server"> 
-						<div id="divLoading"> 
-							<img src="img/splash.png" alt="Loading the page..." /> 
-						</div> 
-						<div id="divFrameHolder" style="display:none">
-	<iframe src="http://igborovibes.com/" onload="hideLoading()" frameborder="0" height="980px" width="100%" >
-	// This will display igborovibes home page form the web
-	</iframe>
-	
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript">
-        app.initialize();
-    </script>
+<body>
+	<div class="main-row">
+		<h1><b>I</b>gboro<b>V</b>IBES</h1>
+		<div class="main_frame">
+			<iframe class="frame-border scroll-pane" src="http://igborovibes.com" frameborder="0"></iframe>
+		</div>
+	</div>
+	<div class="copy-right">
+		<p>&copy; 2017 <a href="http://igborovibes.com">Igboro VIBES</a> | All Rights Reserved <br>Design by <a href="tel://+2347035705023">Idowu James</a>, CEO <a href="mailto:fxroyalmoneysolution@gmail.com">KPIE Technologies</a></p>
+	</div>
+	<script src="fortuneestates/js/jquery.nicescroll.min.js"></script> 
+	<script>
+	  $(document).ready(function() {
+	  
+		var nice = $("html").niceScroll();  // The document page (body)
+		
+		$("#div1").html($("#div1").html()+' '+nice.version);
+		
+		$("#boxscroll").niceScroll(); // First scrollable DIV
+		
+	  });
+	</script>
 </body>
-
 </html>
